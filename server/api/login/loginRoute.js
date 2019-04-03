@@ -11,7 +11,7 @@ function makeTokenFromUser(user) {
 	const payload = {
 		subject: user.id,
 		username: user.username,
-		roles: [ 'student' ]
+		roles: user.department
 	};
 	const options = {
 		expiresIn: '1h'
